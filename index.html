@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+          <meta charset="UTF-8">
+          <title>Trumpline</title>
+          <!-- <link rel="icon" href="http://tomgalle.com/favicons/allflags.ico"> -->
+          <!-- <link rel="image_src" href="http://www.tomgalle.com/thumbnails/allflags.jpg" /> -->
+
+          <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> -->
+          <meta name="description" content="Let Trump know how you feel about closing the internet"/>
+          <!-- <meta name="Keywords" content="ISIS, IS, ISIL, FRANCE, ZUCKERBERG, FACEBOOK, FRANCE ATTACKS, SUPPORT, FLAGS, PROFILE PHOTO"> -->
+          <meta name="author" content="Manny Palou, ART404, Tom Galle"/>
+
+          <!--FACEBOOK META STUFF-->
+          <!-- <meta property="og:image" content="http://www.tomgalle.com/thumbnails/allflags4.jpg" /> -->
+          <meta property="og:type" content="website" />
+          <!-- <meta property="og:title" content="All Flags Profile Photo Converter" /> -->
+          <!-- <meta property="og:site_name" content="All Flags Profile Photo Converter" /> -->
+          <meta property="og:description" content="Let Trump know how you feel about closing the internet" />
+          <!-- <meta property="og:url" content="http://allflags.world/"> -->
+
+          <!--TWITTER META STUFF-->
+          <!-- <meta name="twitter:card" content="summary_large_image"> -->
+          <!-- <meta name="twitter:site" content="http://allflags.world/"> -->
+          <!-- <meta name="twitter:creator" content="@tomgalle, @tweetsnotfound, @team_slava"> -->
+          <!-- <meta name="twitter:title" content="All Flags Profile Photo Converter"> -->
+          <meta name="twitter:description" content="Let Trump know how you feel about closing the internet">
+          <!-- <meta name="twitter:image" content="http://www.tomgalle.com/thumbnails/allflags4.jpg" /> -->
+          
+
+          <!-- STYLESHEETS -->
+          <link rel="stylesheet" type="text/css" href="css/normalize.css">   
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+          <link href='https://fonts.googleapis.com/css?family=Raleway:900|Source+Sans+Pro:900|Merriweather:900|Rubik:900,700' rel='stylesheet' type='text/css'>
+
+
+    </head>
+
+
+    <body>
+
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=120689858295454";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+
+
+
+        <div class="wrapper">
+
+            <!-- HEADER -->
+             <header>
+                <h1>CALL TRUMP</h1>
+                <h2>Donald Trump wants to call Bill Gates to ‘turn off the internet’ 
+                Let's give Trump a call, and let him know how you feel</h2>
+                <p>Fill in your message below, and one of Trumps' offices will receive an automated phonecall with it</p>
+             </header>
+
+
+             <!-- INPUT -->
+             <section class="inputsection">
+               <form action="fillmessage">
+                  Your message:<br>
+                  <input id="inputfield" type="text" name="message" maxlength="80" onfocus="this.value='';" value="Don't touch our internet, Trump" ><br>
+                  <input class="preview submit" type="submit" value="Preview">
+                  <input class="send submit" type="submit" value="Call Trump" > 
+                </form>
+             </section>
+
+             <!-- CONFIRM -->
+             <section class="confirm">
+                <div class="confirmmessage">
+                    Message Sent!
+                  </div>
+             </section>
+
+
+
+            <!-- FOOTER -->
+             <footer>
+                <div class="note">
+                    Our system will transform your written message to <a href="https://goo.gl/QlCzsy">a spoken voice</a>, then calls to a number related to Trumps' campaign and read the message. If no-one picks up the message will automatically be left on the voicemail. Please keep it positive: <span> Do not use hateful or aggresive language.</span> Hate only breeds more hate. If we see too much negativity we will shut it down. Thank you. 
+                </div>
+                <div class="credits">
+                    Don't touch our internet — <a href="https://http://art404.com/">Manny404</a> &amp; <a href="https://www.facebook.com/tomgalledotcom">Tom Galle</a>
+                </div>
+                <div class="social">
+                    <div class="fb-like" data-href="http://www.calltrump.today/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                    <div class="twitter">
+                        <a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://www.calltrump.today/" data-text="Let Donald Trump know how you feel about closing the internet" data-hashtags="TrumpTrolling">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                </div> <!-- social -->
+
+             </footer>  
+
+          </div>  <!-- wrapper -->
+
+        <!-- ANALYTICS -->
+
+        
+
+
+
+
+
+
+        </div> <!--  wrapper -->
+
+
+
+          <!-- JAVASCRIPT -->  
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+            <!--  <script type="text/javascript" src="js/script.js"></script> --> 
+            <script type="text/javascript">
+
+            // LOAD VOICE API
+            script=document.createElement('script');
+            script.setAttribute('src','http://code.responsivevoice.org/responsivevoice.js');
+            document.getElementsByTagName('head')[0].appendChild(script);
+
+            // GLOBAL VARS
+            var inputfield = $('#inputfield'); 
+            var preview = $('.preview'); 
+            var sendButton = $('.send');
+            var inputSection = $('.inputsection');
+            var confirmMessage = $('.confirm')
+
+
+            // GET INPUT, SPEAK, REVEAL SEND
+            preview.on("click", function() {
+                  event.preventDefault();
+                  var inputvalue = inputfield.val();
+                  console.log(inputvalue);
+                  responsiveVoice.speak(inputvalue);
+                  sendButton.css({ display:'inline'});
+
+                  // if(responsiveVoice.isPlaying()) {
+                  //   console.log("I hope you are listening");
+                  // }
+                  //put this in loop so it reveals and removes the 'playing' gif.
+                  
+            });
+
+
+            sendButton.on("click", function(){
+                event.preventDefault();
+                getConfirmation();
+            });
+
+            function getConfirmation(){
+                    var retVal = confirm("Are you sure? Please make sure there's no hate in your message.");
+                    if (retVal == true){
+                        showConfirmMessage();
+                        // return true;
+                    }
+                    else { return false; }
+            }
+
+            function showConfirmMessage(){
+                inputSection.css({ display: 'none' });
+                confirmMessage.css({ 
+                    display : 'inline'
+                    // margin :  '40px 0px'
+
+                });
+            }
+
+
+          </script>        
+
+
+
+    
+
+
+    </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
